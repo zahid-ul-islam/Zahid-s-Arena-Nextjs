@@ -102,8 +102,21 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
 export function useCart() {
   const context = useContext(CartContext);
+
+  // During SSR or if provider is missing, return empty cart state
+  if (typeof window === "undefined") {
+    return {
+      cart: [],
+      addToCart: () => {},
+      removeFromCart: () => {},
+      clearCart: () => {},
+      total: 0,
+    };
+  }
+
   if (context === undefined) {
     throw new Error("useCart must be used within a CartProvider");
   }
+
   return context;
 }
