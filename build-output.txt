@@ -1,0 +1,88 @@
+﻿
+> football-kits@0.1.0 build
+> next build
+
+node.exe : 
+[baseline-browser-mapping] The data 
+in this module is over two months 
+old.  To ensure accurate Baseline 
+data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+At C:\Program 
+Files\nodejs\npm.ps1:29 char:3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpe 
+   cified: ([baseline-brows...ping@  
+  latest -D`:String) [], RemoteExc   
+ eption
+    + FullyQualifiedErrorId : Native 
+   CommandError
+ 
+ ΓÜá `eslint` configuration in 
+next.config.ts is no longer 
+supported. See more info here: https:
+//nextjs.org/docs/app/api-reference/c
+li/next#next-lint-options
+ ΓÜá Invalid next.config.ts options 
+detected: 
+ ΓÜá     Unrecognized key(s) in 
+object: 'eslint'
+ ΓÜá See more info here: https://next
+js.org/docs/messages/invalid-next-con
+fig
+   Γû▓ Next.js 16.0.5 (Turbopack)
+   - Environments: .env
+
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data 
+in this module is over two months 
+old.  To ensure accurate Baseline 
+data, please update: `npm i 
+baseline-browser-mapping@latest -D`
+ Γ£ô Compiled successfully in 2.8s
+   Running TypeScript ...
+Failed to compile.
+
+./src/app/product/[id]/page.tsx:63:28
+Type error: Type '{ _id: string; 
+name: string; description: string; 
+price: number; image: string; 
+productType: "kit" | "football" | 
+"shoes" | "equipment"; category?: 
+string; team?: string; sizes?: 
+string[]; ... 17 more ...; __v: 
+number; }' is not assignable to type 
+'IProduct & { _id: string; }'.
+  Type '{ _id: string; name: string; 
+description: string; price: number; 
+image: string; productType: "kit" | 
+"football" | "shoes" | "equipment"; 
+category?: string | undefined; 
+team?: string | undefined; ... 18 
+more ...; __v: number; }' is missing 
+the following properties from type 
+'IProduct': $assertPopulated, 
+$clearModifiedPaths, $clone, 
+$createModifiedPathsSnapshot, and 43 
+more.
+
+[0m [90m 61 |[39m           [33m<
+[39m[33m/[39m[33mdiv[39m[33m>[
+39m
+ [90m 62 |[39m
+[31m[1m>[22m[39m[90m 63 |[39m  
+         
+[33m<[39m[33mAddToCartButton[39m 
+product[33m=[39m{product} 
+[33m/[39m[33m>[39m
+ [90m    |[39m                     
+       [31m[1m^[22m[39m
+ [90m 64 |[39m         [33m<[39m
+[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 65 |[39m       [33m<[39m[3
+3m/[39m[33mdiv[39m[33m>[39m
+ [90m 66 |[39m     [33m<[39m[33m
+/[39m[33mdiv[39m[33m>[39m[0m
+Next.js build worker exited with 
+code: 1 and signal: null
